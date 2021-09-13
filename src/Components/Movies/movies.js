@@ -7,10 +7,11 @@ class movies extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLoaded:false,
-          movies: [],
+        isLoaded:false,
+        movies: [],
         moviesIniciales:[],
         nextUrl:2,
+        isRow: true,
         };
       }
         
@@ -59,28 +60,38 @@ class movies extends Component {
             })
         }
 
+        columna(){
+            this.setState({
+                isRow: false,
+            })
+        }
+
+        fila(){
+            this.setState({
+                isRow: true,
+            })
+        }
+    
         render(){
     console.log(this.state.movies);
     return(
         <React.Fragment>
                 <header>
-        <h1>Título/ Nombre de la app</h1>
+        <h1>Cinematic</h1>
         <section>
-            <p>Ordenar ASC/ DESC</p>
-            <i className="fas fa-th"></i>
-            <i className="fas fa-align-justify"></i>
+        <i onClick={()=>this.fila()} className="fas fa-th"></i>
+        <i onClick={()=>this.columna()} className="fas fa-align-justify" ></i>
         <Form buscar={buscado=>this.filtrar(buscado)}/>
         </section>
     </header>
     <main>
-    <button onClick={()=>this.addMore()}> Más peliculas </button>
-        <section className="card-container">
-        {
+        <section className={`${this.state.isRow ? 'card-container' : 'columna'}`}>                {
                     this.state.isLoaded ?
                     this.state.movies.map((movie, idx)=><Card key={movie.title + idx} dataMovies={movie} remove={(movieABorrar)=>this.deleteCard(movieABorrar)}/>) :
                     <p>Cargando...</p>
                 }
         </section>
+        <button onClick={()=>this.addMore()}> Más peliculas </button>
     </main>
         </React.Fragment>
          )}

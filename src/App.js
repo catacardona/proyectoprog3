@@ -11,9 +11,9 @@ function App() {
 
     <footer>
         <ul className="team">
-            <li>Nombre integrante 1</li>
-            <li>Nombre integrante 2</li>
-            <li>Nombre integrante 3</li>
+            <li>Catalina Cardona</li>
+            <li>Delfina Giesenow</li>
+            <li>Serena Papazian</li>
         </ul>
     </footer>
     </>

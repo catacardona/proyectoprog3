@@ -41,14 +41,10 @@ selected(){
 // <div className={`character-card ${this.state.selected ? 'active' : 'hola'}`} onDoubleClick={ ()=>this.selected()}>    
                 <article className="character-card">
                 <section className="navigation">
-                    <div>
-                        <i className="fas fa-chevron-left"></i>
-                        <i className="fas fa-chevron-right"></i>
-                    </div>
                     <i className="far fa-window-close" onClick={()=>this.props.remove(this.props.dataMovies.id)}>Borrar</i>
+                    <img src={`https://image.tmdb.org/t/p/w500${this.props.dataMovies.poster_path}`} alt=""/>
                 </section>
                 <main>
-                    <img src={`https://image.tmdb.org/t/p/w500${this.props.dataMovies.poster_path}`} alt=""/>
                     <h3>{this.props.dataMovies.title}</h3>
                     <p className="description">{this.props.dataMovies.overview}</p>
                     <section className="aditional-info">

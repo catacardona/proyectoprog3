@@ -20,7 +20,7 @@ class Form extends Component {
         return (
             <form action= "" onSubmit={(eventoSubmit) => this.evitarDefault(eventoSubmit)}>
                 <input type="text" onChange={(eventoControlar)=> this.controlarCambios(eventoControlar)} value={this.state.valor} 
-                placeholder="Ingresa tu nombre" />
+                placeholder="Buscar titulos" />
                 <button type="submit">Enviar</button>
                </form>
         )
