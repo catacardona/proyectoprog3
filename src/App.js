@@ -8,15 +8,14 @@ function App() {
    <>
    {/*es lo mismo que react.fragment*/}
 
-    <p>React</p>
    
     <Movies />
 
     <footer>
         <ul className="team">
-            <li>Catalina Cardona</li>
-            <li>Delfina Giesenow</li>
-            <li>Serena Papazian</li>
+            <p>Catalina Cardona</p>
+            <p>Delfina Giesenow</p>
+            <p>Serena Papazian</p>
         </ul>
     </footer>
     </>

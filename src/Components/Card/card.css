@@ -1,10 +1,14 @@
 .character-card{
-    padding: 10px;
+    padding: 30px;
     margin-bottom: 20px;
-    width: 24%;
-    background: #fff;
+    width: 15%;
+    color: white;
+    background: black;
     border-radius: 5px;
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+}
+.character-card:hover{
+    background-color: darkslategrey;
 }
 .character-card img{
     width: 100%;
@@ -15,7 +19,8 @@
 box-shadow: 0rem 0rem 10px 8px rgb(58 59 69 / 25%);
 }
 .more{
-    color: blue;
+    color: grey;
+    font-weight: bold;
 }
 .more:hover {
     text-decoration: underline;
@@ -32,6 +37,7 @@ box-shadow: 0rem 0rem 10px 8px rgb(58 59 69 / 25%);
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
+    text-align: left;
 }
 
 .columna{
@@ -62,4 +68,25 @@ box-shadow: 0rem 0rem 10px 8px rgb(58 59 69 / 25%);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+*{
+    background-color: black;
+    color: white;
+}
+
+.botonpelis {
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    background-color: darkslategrey;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+
+.team{
+    text-align: justify;
 }

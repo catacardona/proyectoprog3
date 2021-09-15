@@ -132,7 +132,7 @@ class movies extends Component {
                     <p>Cargando...</p>
                 }
         </section>
-        <button onClick={()=>this.addMore()}> Más peliculas </button>
+        <button className="botonpelis" onClick={()=>this.addMore()}> Más peliculas </button>
         {/*  */}
     </main>
         </React.Fragment>
