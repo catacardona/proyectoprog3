@@ -3,12 +3,12 @@
     margin-bottom: 20px;
     width: 15%;
     color: white;
-    background: black;
     border-radius: 5px;
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    text-align: center;
 }
 .character-card:hover{
-    background-color: darkslategrey;
+    background-color: rgba(82, 82, 82, 0.418);
 }
 .character-card img{
     width: 100%;
@@ -18,13 +18,18 @@
 .active{
 box-shadow: 0rem 0rem 10px 8px rgb(58 59 69 / 25%);
 }
+
 .more{
     color: grey;
     font-weight: bold;
+    text-align: center;
+    background-color: transparent;
 }
 .more:hover {
     text-decoration: underline;
     cursor: pointer;
+    font-size: 22px;
+    color: rgb(216, 20, 20);
 }
 .hide{
     display: none;
@@ -34,10 +39,26 @@ box-shadow: 0rem 0rem 10px 8px rgb(58 59 69 / 25%);
 }
 
 .card-container{
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction:row;
-    text-align: left;
+    justify-content: space-around;
+    width: 100%;
+}
+
+button{
+    margin-top: 1px;
+    margin-left: 5px;
+    background-color: rgb(216, 20, 20); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    border-radius: 30px;
 }
 
 .columna{
@@ -64,29 +85,75 @@ box-shadow: 0rem 0rem 10px 8px rgb(58 59 69 / 25%);
     flex-direction: column;
 }
 
+main {
+ background-color: transparent;
+}
+
+main h3 {
+    background-color: transparent;
+   }
+
+main p{
+    background-color: transparent;
+   }
+
 .fila{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-*{
-    background-color: black;
-    color: white;
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color:black;
 }
 
 .botonpelis {
-    width: 200px;
-    height: 50px;
-    font-size: large;
-    background-color: darkslategrey;
+    margin-top: 1px;
+    margin-left: 5px;
+    background-color: rgb(216, 20, 20); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-    align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    border-radius: 30px;
     justify-content: center;
-    margin: auto;
-    display: flex;
+    align-items: center;
 }
 
 .team{
     text-align: justify;
+    color: whitesmoke;
+    background-color: transparent;
 }
+
+.team p{
+    text-align: justify;
+    color: whitesmoke;
+    background-color: transparent;
+}
+
+footer{
+    background-image: linear-gradient(black, rgb(216, 20, 20));
+    padding: 2%;
+    margin-top: 3%;
+  }
+
+  header{
+    background-image: linear-gradient(rgb(216, 20, 20), black);
+    padding: 2%;
+    margin-top: 3%;
+    color: white;
+  }
+
+
+
+
