@@ -4,7 +4,8 @@ import Card from '../Card/Card';
 import Form from '../Form/Form';
 /* DOM como tenes el documento actual el codigo literal, virtual DOM es lo que esta en el navegador, la interpretacion del codigo en el navegador*/
 /* componente con estado, class es una palabra reservada de react, permite armar una funcion pero aportandole cosas de un componente con estado*/
-class movies extends Component {
+
+class Movies extends Component {
     constructor(props) {
         super(props);
         /*permiten poder tener estados, constructor son las propiedades y super agarra las propiedades (props) del componente padre*/
@@ -70,12 +71,12 @@ class movies extends Component {
             /*hago un filter, guardo un array de las peliculas filtradas */
             /* filter permite manejarme y seguir filtrando o recorriendo un array*/
             let moviesQueQuedan = this.state.movies.filter( movie => movie.id !== movieABorrar);
-            /*movie es el nombre de cada elemento, despues va la condicion, que las movies que quedan sean distintas a las que borre*/
-            /*cada pelicula que cumpla esa condicion es la que queda*/
+         /*movie es el nombre de cada elemento, despues va la condicion, que las movies que quedan sean distintas a las que borre*/
+         /*filter se queda con elemento que cumpla condicion: cada pelicula que cumpla esa condicion es la que queda*/
             this.setState({
                 movies: moviesQueQuedan,
                 moviesIniciales: moviesQueQuedan
-                /*modifico el estado, movies pasa a ser las que quedaron despues de borrar y moviesIniciales tambien para que no vuelva a aparecer*/
+     /*modifico el estado, movies pasa a ser las que quedaron despues de borrar y moviesIniciales tambien para que no vuelva a aparecer*/
             })
         }
         filtrar(buscado){
@@ -139,5 +140,5 @@ class movies extends Component {
          )}
 
             }
-export default movies;
+export default Movies;
 /*exporto la clase movies para poder incluirlo*/

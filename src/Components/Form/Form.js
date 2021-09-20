@@ -35,7 +35,6 @@ class Form extends Component {
                 /*usa el metodo controlarCambios */
                 /* this.state.valor es el unico estado de este componente, el value cambia a lo que haya dentro del input*/
                 placeholder="Buscar titulos" />
-                <button type="submit">Enviar</button>
                </form>
         )
     }

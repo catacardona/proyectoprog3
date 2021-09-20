@@ -1,6 +1,6 @@
 import React from 'react';
 /* necesario para escribir jsx, formato similar a html con un par de cambios*/
-import Movies from './Components/Movies/movies';
+import Movies from './Components/Movies/Movies';
 
 /* componentes sin estado, los creo con function, devuelve html y los componentes*/
 function App() {
