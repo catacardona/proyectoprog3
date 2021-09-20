@@ -7,4 +7,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-/*agarra el div con id root, y le mete el componente app al root*/
